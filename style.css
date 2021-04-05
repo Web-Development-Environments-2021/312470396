@@ -1,7 +1,110 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+.topnav {
+  background-color: #91c788;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #feffde;
+}
+
+.topnav li {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  list-style-type: none;
+}
+.topnav li:nth-child(n + 2):before {
+  padding-right: 10px;
+  content: "|  ";
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 4vh;
+}
+.like-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 4vh;
+}
+.section-line {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #91c788;
+  width: 100%;
+
+  height: 1.5vh;
+}
+img {
+  border-width: 5px;
+  height: 50vh;
+  padding: 10px 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.email-name {
+  width: 20vw;
+}
+.email-body {
+  width: 20vw;
+  height: 10vh;
+}
+.submit-email {
+  width: 5vw;
+  margin-top: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddffbc;
 }
